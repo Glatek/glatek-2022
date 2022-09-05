@@ -76,6 +76,7 @@ nav ul {
   }
 }
 
+nav,
 footer,
 main {
   max-width: 700px;
