@@ -30,10 +30,10 @@ body {
 nav ul {
   list-style: none;
   display: flex;
+  padding: calc(var(--gr) / 2) 0;
 
-  & li {
-    padding: 0 calc(var(--gr) / 2);
-    flex: 1;
+  & li:not(:first-child) {
+    padding-left: var(--gr);
   }
 
   & a {

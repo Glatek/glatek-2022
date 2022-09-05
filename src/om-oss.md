@@ -3,6 +3,7 @@ title: "Om oss"
 layout: layouts/base.njk
 menu:
   visible: true
+  order: 0
 ---
 <img class="profile-pic" src="https://gravatar.com/avatar/43e42263dca67ab0063b88edf7ca290e?s=400&d=robohash&r=x">
 

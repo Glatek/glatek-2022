@@ -3,6 +3,7 @@ title: "Portfölj"
 layout: layouts/base.njk
 menu:
   visible: true
+  order: 1
 ---
 
 ## Kunder

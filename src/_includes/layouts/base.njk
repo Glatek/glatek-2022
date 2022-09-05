@@ -11,7 +11,9 @@
   <body>
     <header class="site-header">
       <a href="/"><strong id="company-name">{{ site.title }}</strong></a>
-      <nav class="navbar">
+    </header>
+
+    <nav class="navbar">
       <ul class="navbar-links">
       {%- for entry in search.pages("menu.visible=true", "menu.order") %}
         <li>
@@ -26,7 +28,6 @@
         <oom-search label="Search" placeholder="Post title or tag" src="{{ '/search.json' | url }}"></oom-search>
       </div>
     </nav>
-    </header>
 
     <main class="{{ bodyClass }}">
       {{ content | safe }}

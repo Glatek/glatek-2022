@@ -29,12 +29,12 @@ body {
 
 nav ul {
   list-style: none;
-  display: flex
+  display: flex;
+  padding: calc(var(--gr) / 2) 0
 }
 
-nav ul li {
-    padding: 0 calc(var(--gr) / 2);
-    flex: 1;
+nav ul li:not(:first-child) {
+    padding-left: var(--gr);
   }
 
 nav ul a {
