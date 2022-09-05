@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/"><strong id="company-name">{{ site.title }}</strong></a>
+      <nav class="navbar">
+      <ul class="navbar-links">
+      {%- for entry in search.pages("menu.visible=true", "menu.order") %}
+        <li>
+          <a href="{{ entry.data.url }}"{% if entry.data.url == url %} aria-current="page"{% endif %}>
+            {{ entry.data.menu.title or entry.data.title }}
+          </a>
+        </li>
+      {%- endfor %}
+      </ul>
+
+      <div class="navbar-search">
+        <oom-search label="Search" placeholder="Post title or tag" src="{{ '/search.json' | url }}"></oom-search>
+      </div>
+    </nav>
+    </header>
+
+    <main class="{{ bodyClass }}">
+      {{ content | safe }}
+    </main>
+
+    <div class="hrs">
+      <hr>
+      <hr>
+      <hr>
+    </div>
+
+    <footer>
+      <strong>Glatek</strong><br>
+      Barlingshult<br>
+      Södra Ögården<br>
+      672 93 Årjäng<br>
+      <br><br>
+      <a href="mailto:info@glatek.se">info@glatek.se</a><br>
+      <a href="tel:0046725039148">072-503 91 48</a>
+      <br><br>
+      Innehar F-skatt.<br>
+      <br><br>
+      Se även <a href="https://barlingshult.se">barlingshult.se</a>.
+    </footer>
+
+    <!-- Current page: {{ url }} -->
+  </body>
+</html>

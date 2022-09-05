@@ -1,0 +1,102 @@
+:root {
+  --blue1: #d2fff2;
+  --blue2: #a1eee0;
+  --pink1: #ff5b9d;
+  --red: #ff496e;
+  --purple: #d0286c;
+  --gr: 1.61803398875rem;
+}
+
+html,
+body {
+  font-family: 'Fira Code', monospace;
+  padding: var(--gr);
+}
+
+.site-header {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 192px;
+  border-radius: 50%;
+  margin: var(--gr) auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+  & li {
+    padding: 0 calc(var(--gr) / 2);
+    flex: 1;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.hrs {
+  max-width: 700px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gr);
+  margin: 0 auto;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+
+  & hr {
+    flex: 1;
+    background-color: var(--blue1);
+    height: calc(var(--gr) / 4);
+    display: block;
+    border: 0;
+
+    &:nth-child(2) {
+      background-color: var(--blue2);
+    }
+
+    &:nth-child(3) {
+      background-color: var(--pink1);
+    }
+  }
+}
+
+footer,
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 0.8em;
+}
+
+#company-name {
+  font-weight: 300;
+  font-size: 32pt;
+  color: #555;
+  background-color: #eee;
+  padding: 3pt 6pt;
+  border-radius: 6pt;
+  margin: 6pt 0;
+  display: inline-block;
+
+  &::before {
+    content: "·";
+    margin: 0 4pt;
+    color: var(--red);
+    font-weight: bold;
+  }
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+}
