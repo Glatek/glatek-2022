@@ -35,6 +35,15 @@ body {
   display: block;
 }
 
+a {
+  color: currentColor;
+
+  &:hover {
+    color: var(--purple);
+    text-decoration: underline;
+  }
+}
+
 nav ul {
   list-style: none;
   display: flex;

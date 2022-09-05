@@ -35,6 +35,15 @@ body {
   display: block;
 }
 
+a {
+  color: currentColor
+}
+
+a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+  }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -78,6 +87,7 @@ nav ul a {
       background-color: var(--pink1);
     }
 
+nav,
 footer,
 main {
   max-width: 700px;
