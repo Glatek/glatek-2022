@@ -27,12 +27,6 @@ body {
   align-items: center;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  margin: var(--gr) auto;
-  display: block;
-}
-
 a {
   color: currentColor;
 
@@ -94,25 +88,8 @@ footer {
   font-size: 0.8em;
 }
 
-#company-name {
-  font-weight: 300;
-  font-size: 32pt;
-  color: #555;
-  background-color: #eee;
-  padding: 3pt 6pt;
-  border-radius: 6pt;
-  margin: 6pt 0;
-  display: inline-block;
-
-  &::before {
-    content: "·";
-    margin: 0 4pt;
-    color: var(--red);
-    font-weight: bold;
-  }
-}
-
 p {
   text-align: justify;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
