@@ -12,4 +12,6 @@ site.add('/.well-known');
 site.use(esbuild());
 site.use(postcss());
 
+site.copy('fonts');
+
 export default site;
