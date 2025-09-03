@@ -90,6 +90,5 @@ footer {
 
 p {
   text-align: justify;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }

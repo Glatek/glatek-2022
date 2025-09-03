@@ -9,13 +9,13 @@ const site = lume({
 });
 
 site.add("/css/main.css");
+site.add("/css/fonts.css");
 site.add('/.well-known');
+site.add("fonts");
 
 site.use(esbuild());
-site.use(inline());
 site.use(postcss());
+site.use(inline());
 site.use(nunjucks());
-
-site.copy("fonts");
 
 export default site;
