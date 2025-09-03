@@ -1,6 +1,6 @@
 ---
 title: "Om oss"
-layout: layouts/base.njk
+layout: base.vto
 menu:
   visible: true
   order: 0

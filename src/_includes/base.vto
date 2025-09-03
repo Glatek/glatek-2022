@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or site.title }}</title>
-    <meta name="description" content="{{ description or site.description }}">
+    <title>{{ title || site.title }}</title>
+    <meta name="description" content="{{ description || site.description }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
-    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header class="site-header">
@@ -15,13 +15,13 @@
 
     <nav class="navbar">
       <ul class="navbar-links">
-      {%- for entry in search.pages("menu.visible=true", "menu.order") %}
+      {{ for entry of search.pages("menu.visible=true", "menu.order") }}
         <li>
-          <a href="{{ entry.data.url }}"{% if entry.data.url == url %} aria-current="page"{% endif %}>
-            {{ entry.data.menu.title or entry.data.title }}
+          <a href="{{ entry.url }}"{{ if entry.url }} aria-current="page"{{ /if }}>
+            {{ entry.menu.title || entry.title }}
           </a>
         </li>
-      {%- endfor %}
+      {{ /for }}
       </ul>
 
       <div class="navbar-search">
@@ -30,7 +30,7 @@
     </nav>
 
     <main class="{{ bodyClass }}">
-      {{ content | safe }}
+      {{ content }}
     </main>
 
     <div class="hrs">

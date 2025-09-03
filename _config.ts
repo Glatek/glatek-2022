@@ -6,6 +6,8 @@ const site = lume({
   src: './src'
 });
 
+site.add("/css/main.css");
+
 site.use(esbuild());
 site.use(postcss());
 

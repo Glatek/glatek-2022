@@ -36,27 +36,27 @@ body {
 }
 
 a {
-  color: currentColor
-}
+  color: currentColor;
 
-a:hover {
+  &:hover {
     color: var(--purple);
     text-decoration: underline;
   }
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  padding: calc(var(--gr) / 2) 0
-}
+  padding: calc(var(--gr) / 2) 0;
 
-nav ul li:not(:first-child) {
+  & li:not(:first-child) {
     padding-left: var(--gr);
   }
 
-nav ul a {
+  & a {
     text-decoration: none;
   }
+}
 
 .hrs {
   max-width: 700px;
@@ -65,27 +65,25 @@ nav ul a {
   justify-content: space-around;
   gap: var(--gr);
   margin: 0 auto;
-  -webkit-margin-before: 1rem;
-          margin-block-start: 1rem;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem
-}
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
 
-.hrs hr {
+  & hr {
     flex: 1;
     background-color: var(--blue1);
     height: calc(var(--gr) / 4);
     display: block;
-    border: 0
-  }
+    border: 0;
 
-.hrs hr:nth-child(2) {
+    &:nth-child(2) {
       background-color: var(--blue2);
     }
 
-.hrs hr:nth-child(3) {
+    &:nth-child(3) {
       background-color: var(--pink1);
     }
+  }
+}
 
 nav,
 footer,
@@ -106,18 +104,17 @@ footer {
   padding: 3pt 6pt;
   border-radius: 6pt;
   margin: 6pt 0;
-  display: inline-block
-}
+  display: inline-block;
 
-#company-name::before {
+  &::before {
     content: "·";
     margin: 0 4pt;
     color: var(--red);
     font-weight: bold;
   }
+}
 
 p {
   text-align: justify;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
 }
