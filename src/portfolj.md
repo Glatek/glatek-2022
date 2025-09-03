@@ -2,7 +2,7 @@
 title: "Portfölj"
 layout: base.vto
 menu:
-  visible: true
+  visible: false
   order: 1
 ---
 
