@@ -92,3 +92,11 @@ p {
   text-align: justify;
   hyphens: auto;
 }
+
+@view-transition {
+  navigation: auto;
+}
+
+footer {
+  view-transition-name: footer;
+}
