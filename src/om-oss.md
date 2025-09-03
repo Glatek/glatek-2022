@@ -5,13 +5,7 @@ menu:
   visible: true
   order: 0
 ---
-<style>
-.profile-pic {
-  border-radius: 50%;
-  margin: var(--gr) auto;
-  display: block;
-}
-</style>
+<link rel="stylesheet" href="/css/om-oss.css" inline>
 
 <img class="profile-pic" width="192" height="192" src="https://gravatar.com/avatar/43e42263dca67ab0063b88edf7ca290e?s=400&d=robohash&r=x">
 

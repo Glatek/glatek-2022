@@ -8,8 +8,7 @@ const site = lume({
   src: "./src",
 });
 
-site.add("/css/main.css");
-site.add("/css/fonts.css");
+site.add("css");
 site.add('/.well-known');
 site.add("fonts");
 

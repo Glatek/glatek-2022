@@ -1,8 +1,7 @@
 ---
-title: "Glatek"
+title: Glatek
 layout: base.vto
 ---
-
 Välkommen till Nordens modernaste webbyrå! På ett fossilfritt småbruk i Värmlands djupaste skogar — närmare bestämt i naturreservatet Glaskogen — befinner vi oss med spetskompetens i moderna webbmiljöer. Vi skapar och underhåller hantverksmässigt din webbplats, hemsida, blogg och progressiva webbapplikation (PWA).
 
 Vi jobbar med de allra senaste teknikerna inom webbutveckling och webbdesign för att kunna leverera en bra produkt som står sig med tiden. Efter leverans finns vi tillgänliga för att löpande hjälpa dig underhålla sidan.
