@@ -7,6 +7,7 @@ const site = lume({
 });
 
 site.add("/css/main.css");
+site.add('/.well-known');
 
 site.use(esbuild());
 site.use(postcss());
