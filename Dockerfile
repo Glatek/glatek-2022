@@ -1,21 +1,19 @@
-FROM denoland/deno:debian-2.7.14 AS builder
+FROM denoland/deno:alpine-2.7.14 AS builder
 
 WORKDIR /app
 
 COPY deno.json deno.lock ./
-RUN deno install --frozen && \
-    deno install --global --allow-net --allow-read -r -n file-server jsr:@std/http/file-server
+RUN deno install --frozen
 
-ADD . .
+COPY . .
 RUN deno task build
 
-FROM denoland/deno:distroless-2.7.14 AS runtime
+FROM denoland/deno:alpine-2.7.14 AS runtime
 
-WORKDIR /usr/app/src
+WORKDIR /usr/app
 
-
-COPY --from=builder /usr/local/bin/file-server /usr/local/bin/file-server
-COPY --from=builder /app/_site /usr/app/src
+RUN deno install --allow-net --allow-read --allow-sys --global jsr:@std/http/file-server
+COPY --from=builder /app/_site ./_site
 
 EXPOSE 8000
-CMD ["file-server", ".", "--port", "8000"]
+CMD ["file-server", "./_site", "--port", "8000"]
