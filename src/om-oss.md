@@ -5,8 +5,15 @@ menu:
   visible: true
   order: 0
 ---
+
 <link rel="stylesheet" href="/css/om-oss.css" inline>
 
 <img class="profile-pic" width="192" height="192" src="https://gravatar.com/avatar/43e42263dca67ab0063b88edf7ca290e?s=400&d=robohash&r=x">
 
-Jag som äger och driver företaget Glatek heter Jeremy Karlsson. Till vardags jobbar jag som webbapplikationsutvecklare hos <a href="https://block.xyz">Block Inc.</a> där jag bygger applikationen till musikströmningsplattformen <a href="https://tidal.com">TIDAL</a>. Vid sidan av detta arbete driver jag Glatek och <a href="https://barlingshult.se">Barlingshult Småbruk</a>.
+Jag som äger och driver företaget Glatek heter Jeremy Karlsson. Till vardags
+jobbar jag som seniorrådgivare på <a href="https://www.nav.no/">Arbeids- og
+velferdsetaten</a>. Tidigare har jag varit mjukvaruutvecklare på webben med
+ansvar för avspelning på musikströmningsplattformen
+<a href="https://tidal.com">TIDAL</a> hos <a href="https://block.xyz">Block
+Inc.</a> Vid sidan av detta arbete driver jag Glatek och
+<a href="https://barlingshult.se">Barlingshult Småbruk</a>.
