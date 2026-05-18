@@ -71,5 +71,5 @@
       "npm:sharp"
     ]
   },
-  "lock": false
+  "lock": true
 }
