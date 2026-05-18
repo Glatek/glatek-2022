@@ -1,6 +1,6 @@
 FROM denoland/deno:debian-2.7.14 AS builder
 WORKDIR /app
-COPY deno.json deno.lock ./
+COPY deno.json deno.lock _config.ts ./
 RUN deno install --frozen
 RUN deno cache --allow-scripts _config.ts
 RUN deno install --global --allow-net --allow-read -r -n file-server jsr:@std/http/file-server
