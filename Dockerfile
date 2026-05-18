@@ -11,7 +11,6 @@ RUN deno task build
 
 FROM denoland/deno:distroless-2.7.14 AS runtime
 
-USER deno
 WORKDIR /usr/app/src
 
 
