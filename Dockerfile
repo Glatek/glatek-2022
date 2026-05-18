@@ -1,10 +1,9 @@
 FROM denoland/deno:debian-2.7.14 AS builder
 
-USER deno
 WORKDIR /app
 
 COPY deno.json deno.lock ./
-RUN deno install --frozen && \
+RUN deno install --frozen --config && \
     deno install --global --allow-net --allow-read -r -n file-server jsr:@std/http/file-server
 
 ADD . .
