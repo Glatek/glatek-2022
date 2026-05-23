@@ -12,6 +12,7 @@ const site = lume({
 site.add("css");
 site.add('/.well-known');
 site.add("fonts");
+site.add("img");
 
 site.use(lightningCSS());
 site.use(inline());

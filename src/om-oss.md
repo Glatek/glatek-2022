@@ -3,7 +3,7 @@ title: "Om oss"
 layout: base.vto
 menu:
   visible: true
-  order: 0
+  order: 1
 ---
 
 <link rel="stylesheet" href="/css/om-oss.css" inline>

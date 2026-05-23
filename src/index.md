@@ -1,6 +1,10 @@
 ---
-title: Glatek
+title: "Glatek"
 layout: base.vto
+menu:
+  visible: true
+  order: 0
+  title: "Start"
 ---
 
 Välkommen till Nordens kanske modernaste webbyrå! På ett fossilfritt småbruk i

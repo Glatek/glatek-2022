@@ -3,7 +3,7 @@ title: "Portfölj"
 layout: base.vto
 menu:
   visible: true
-  order: 1
+  order: 2
 ---
 
 ## Kunder
